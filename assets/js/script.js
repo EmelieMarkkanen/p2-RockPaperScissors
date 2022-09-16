@@ -19,7 +19,11 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 // Generate random computer choice
 
 function generateComputerChoice() {
-  const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1);
+  const computerPossibleChoices = [
+    "rock","paper","scissors","lizard","spock",
+  ];
+  const randomNumber = Math.floor(Math.random() * possibleChoices.length);
+  computerChoice = computerPossibleChoices[randomNumber];
 
   if (randomNumber === 1) {
     computerChoice = "rock";
