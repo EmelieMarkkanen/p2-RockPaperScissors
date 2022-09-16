@@ -46,6 +46,7 @@ function generateComputerChoice() {
 // Generate result for winner/loser
 
 function getResult() {
+
   if (computerChoice === playerChoice) {
     result = 'its a draw!';
   }
@@ -53,10 +54,10 @@ function getResult() {
     result = 'you win!';
   }
   if (computerChoice === 'rock' && playerChoice === "scissors") {
-    result = 'you lost!';
+    result = 'you lose!';
   }
   if (computerChoice === 'rock' && playerChoice === "lizard") {
-    result = 'you lost!';
+    result = 'you lose!';
   }
   if (computerChoice === 'rock' && playerChoice === "spock") {
     result = 'you win!';
@@ -85,6 +86,17 @@ function getResult() {
   if (computerChoice === 'scissors' && playerChoice === "spock") {
     result = 'you win!';
   }
+  if (computerChoice === 'lizard' && playerChoice === "spock") {
+    result = 'you lose!';
+  }
+  if (computerChoice === 'lizard' && playerChoice === "rock") {
+    result = 'you win!';
+  }
+  if (computerChoice === 'lizard' && playerChoice === "scissors") {
+    result = 'you win!';
+  }
+  if (computerChoice === 'lizard' && playerChoice === "paper") {
+    result = 'you lose!';
+  }
   resultDisplay.innerHTML = result;
 }
-
