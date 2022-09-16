@@ -6,6 +6,8 @@ let playerChoice;
 let computerChoice;
 let result;
 
+//Event listener for clicking buttons
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   playerChoice = e.target.id;
   playerChoiceDisplay.innerHTML = playerChoice;
@@ -13,6 +15,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   getResult();
 }
 ));
+
+// Generate random computer choice
 
 function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1);
@@ -34,6 +38,8 @@ function generateComputerChoice() {
   }
   computerChoiceDisplay.innerHTML = computerChoice;
 }
+
+// Generate result for winner/loser
 
 function getResult() {
   if (computerChoice === playerChoice) {
@@ -77,3 +83,4 @@ function getResult() {
   }
   resultDisplay.innerHTML = result;
 }
+
