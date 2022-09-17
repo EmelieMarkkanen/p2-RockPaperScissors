@@ -46,66 +46,74 @@ function generateComputerChoice() {
   computerChoiceDisplay.innerHTML = computerChoice;
 }
 
-// Generate result for winner/loser
+// Generate result for winner/loser and update score
 
 function getResult() {
   let win = "You win";
   let lose = "You lose";
   let draw = "It's a draw";
-  let playerScore = 0;
-  let computerScore = 0;
-
 
   if (computerChoice === "rock") {
     if (playerChoice === "paper" || playerChoice === "spock") {
       result = win;
-      playerScore++;
+      playerScore();
     } else {
       result = lose;
-      computerScore++;
+      computerScore();
     }
-    
   }
+
   if (computerChoice === "paper") {
     if (playerChoice === "lizard" || playerChoice === "scissors") {
       result = win;
-      playerScore++;
+      playerScore();
     } else {
       result = lose;
-      computerScore++;
+      computerScore();
     }
   }
 
   if (computerChoice === "scissors") {
     if (playerChoice === "rock" || playerChoice === "spock") {
       result = win;
-      playerScore++;
+      playerScore();
     } else {
       result = lose;
-      computerScore++;
+      computerScore();
     }
   }
 
   if (computerChoice === "lizard") {
     if (playerChoice === "scissors" || playerChoice === "rock") {
       result = win;
-      playerScore++;
+      playerScore();
     } else {
       result = lose;
-      computerScore++;
+      computerScore();
     }
   }
 
   if (computerChoice === "spock") {
     if (playerChoice === "lizard" || playerChoice === "paper") {
       result = win;
-      playerScore++;
+      playerScore();
     } else {
       result = lose;
-      computerScore++;
+      computerScore();
     }
   }
   resultDisplay.innerHTML = result;
-  playerScoreDisplay.innerHTML = playerScore;
-  computerScoreDisplay.innerHTML = computerScore;
+}
+
+function playerScore() {
+  let yourScore = parseInt(document.getElementById("player-score").innerText);
+  document.getElementById("player-score").innerText = ++yourScore;
+}
+function computerScore() {
+  let yourScore = parseInt(document.getElementById("computer-score").innerText);
+  document.getElementById("computer-score").innerText = ++yourScore;
+}
+function drawScore() {
+  let yourScore = parseInt(document.getElementById("draw-score").innerText);
+  document.getElementById("draw-score").innerText = ++yourScore;
 }
