@@ -2,12 +2,11 @@ const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
-let playerScore = document.getElementById("player-score")
-let computerScore = document.getElementById("computer-score")
+const playerScoreDisplay = document.getElementById("player-score");
+const computerScoreDisplay = document.getElementById("computer-score");
 let playerChoice;
 let computerChoice;
 let result;
-
 
 //Event listener
 
@@ -16,6 +15,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   playerChoiceDisplay.innerHTML = playerChoice;
   generateComputerChoice();
   getResult();
+  updateScore();
 }
 ));
 
@@ -52,44 +52,60 @@ function getResult() {
   let win = "You win";
   let lose = "You lose";
   let draw = "It's a draw";
+  let playerScore = 0;
+  let computerScore = 0;
+
 
   if (computerChoice === "rock") {
     if (playerChoice === "paper" || playerChoice === "spock") {
       result = win;
+      playerScore++;
     } else {
       result = lose;
+      computerScore++;
     }
+    
   }
   if (computerChoice === "paper") {
     if (playerChoice === "lizard" || playerChoice === "scissors") {
       result = win;
+      playerScore++;
     } else {
       result = lose;
+      computerScore++;
     }
   }
 
   if (computerChoice === "scissors") {
     if (playerChoice === "rock" || playerChoice === "spock") {
       result = win;
+      playerScore++;
     } else {
       result = lose;
+      computerScore++;
     }
   }
 
   if (computerChoice === "lizard") {
     if (playerChoice === "scissors" || playerChoice === "rock") {
       result = win;
+      playerScore++;
     } else {
       result = lose;
+      computerScore++;
     }
   }
 
   if (computerChoice === "spock") {
     if (playerChoice === "lizard" || playerChoice === "paper") {
       result = win;
+      playerScore++;
     } else {
       result = lose;
+      computerScore++;
     }
   }
   resultDisplay.innerHTML = result;
+  playerScoreDisplay.innerHTML = playerScore;
+  computerScoreDisplay.innerHTML = computerScore;
 }
