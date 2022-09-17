@@ -2,11 +2,14 @@ const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll("button");
+let playerScore = document.getElementById("player-score")
+let computerScore = document.getElementById("computer-score")
 let playerChoice;
 let computerChoice;
 let result;
 
-//Event listener for clicking buttons
+
+//Event listener
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   playerChoice = e.target.id;
@@ -46,57 +49,47 @@ function generateComputerChoice() {
 // Generate result for winner/loser
 
 function getResult() {
+  let win = "You win";
+  let lose = "You lose";
+  let draw = "It's a draw";
 
-  if (computerChoice === playerChoice) {
-    result = 'its a draw!';
+  if (computerChoice === "rock") {
+    if (playerChoice === "paper" || playerChoice === "spock") {
+      result = win;
+    } else {
+      result = lose;
+    }
   }
-  if (computerChoice === 'rock' && playerChoice === "paper") {
-    result = 'you win!';
+  if (computerChoice === "paper") {
+    if (playerChoice === "lizard" || playerChoice === "scissors") {
+      result = win;
+    } else {
+      result = lose;
+    }
   }
-  if (computerChoice === 'rock' && playerChoice === "scissors") {
-    result = 'you lose!';
+
+  if (computerChoice === "scissors") {
+    if (playerChoice === "rock" || playerChoice === "spock") {
+      result = win;
+    } else {
+      result = lose;
+    }
   }
-  if (computerChoice === 'rock' && playerChoice === "lizard") {
-    result = 'you lose!';
+
+  if (computerChoice === "lizard") {
+    if (playerChoice === "scissors" || playerChoice === "rock") {
+      result = win;
+    } else {
+      result = lose;
+    }
   }
-  if (computerChoice === 'rock' && playerChoice === "spock") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'paper' && playerChoice === "scissors") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'paper' && playerChoice === "rock") {
-    result = 'you lose!';
-  }
-  if (computerChoice === 'paper' && playerChoice === "spock") {
-    result = 'you lose!';
-  }
-  if (computerChoice === 'paper' && playerChoice === "lizard") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'scissors' && playerChoice === "rock") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'scissors' && playerChoice === "paper") {
-    result = 'you lose!';
-  }
-  if (computerChoice === 'scissors' && playerChoice === "lizard") {
-    result = 'you lose!';
-  }
-  if (computerChoice === 'scissors' && playerChoice === "spock") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'lizard' && playerChoice === "spock") {
-    result = 'you lose!';
-  }
-  if (computerChoice === 'lizard' && playerChoice === "rock") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'lizard' && playerChoice === "scissors") {
-    result = 'you win!';
-  }
-  if (computerChoice === 'lizard' && playerChoice === "paper") {
-    result = 'you lose!';
+
+  if (computerChoice === "spock") {
+    if (playerChoice === "lizard" || playerChoice === "paper") {
+      result = win;
+    } else {
+      result = lose;
+    }
   }
   resultDisplay.innerHTML = result;
 }
