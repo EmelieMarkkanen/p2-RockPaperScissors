@@ -111,6 +111,8 @@ function getResult() {
   resultDisplay.innerHTML = result;
 }
 
+//Generate and update score count for player, computer and draw
+
 function playerScore() {
   let yourScore = parseInt(document.getElementById("player-score").innerText);
   document.getElementById("player-score").innerText = ++yourScore;
@@ -122,4 +124,10 @@ function computerScore() {
 function drawScore() {
   let yourScore = parseInt(document.getElementById("draw-score").innerText);
   document.getElementById("draw-score").innerText = ++yourScore;
+}
+
+function resetGame () {
+  document.getElementById("player-score").innerText = 0;
+  document.getElementById("computer-score").innerText = 0;
+  document.getElementById("draw-score").innerText = 0;
 }
