@@ -53,7 +53,12 @@ function getResult() {
   let lose = "You lose";
   let draw = "It's a draw";
 
-  if (computerChoice === "rock") {
+  if (computerChoice === playerChoice) {
+    result = draw;
+    drawScore();
+  }
+
+  else if (computerChoice === "rock") {
     if (playerChoice === "paper" || playerChoice === "spock") {
       result = win;
       playerScore();
@@ -63,7 +68,7 @@ function getResult() {
     }
   }
 
-  if (computerChoice === "paper") {
+  else if (computerChoice === "paper") {
     if (playerChoice === "lizard" || playerChoice === "scissors") {
       result = win;
       playerScore();
@@ -73,7 +78,7 @@ function getResult() {
     }
   }
 
-  if (computerChoice === "scissors") {
+  else if (computerChoice === "scissors") {
     if (playerChoice === "rock" || playerChoice === "spock") {
       result = win;
       playerScore();
@@ -83,7 +88,7 @@ function getResult() {
     }
   }
 
-  if (computerChoice === "lizard") {
+  else if (computerChoice === "lizard") {
     if (playerChoice === "scissors" || playerChoice === "rock") {
       result = win;
       playerScore();
@@ -93,7 +98,7 @@ function getResult() {
     }
   }
 
-  if (computerChoice === "spock") {
+  else if (computerChoice === "spock") {
     if (playerChoice === "lizard" || playerChoice === "paper") {
       result = win;
       playerScore();
@@ -101,6 +106,7 @@ function getResult() {
       result = lose;
       computerScore();
     }
+
   }
   resultDisplay.innerHTML = result;
 }
