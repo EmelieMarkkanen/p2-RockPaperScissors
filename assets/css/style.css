@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Kanit:wght@300&family=Lato:wght@300&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+border: none;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: 'Kanit', sans-serif;
+    color: gray;
+    align-items: center;
+    text-align: center;  
+}
+
+h1 {
+    letter-spacing: 2px;
+    
+}
+
+h2 {
+    display: inline-block;
+    padding: 2em;
+    letter-spacing: 2px;
+}
+
+.result {
+    margin-right: 15em;
+}
+
+header {
+    padding: 2em;
+}
+
+.navbar {
+    margin: 0;
+}
+.menu button {
+    float: right;
+    margin-right: 5em;
+    list-style: none;
+    text-decoration: none;
+}
+
+button {
+    background-color: green; 
+    border-radius: 100%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+}
+
+button:hover {
+    color: blue;
+}
+
+div {
+
+}
+.choice-area {
+    
+}
+
+.icon-area {
+    margin: 3em;
+}
+
+.scoring-area {
+    margin: 3em;
+}
+
+.reset {
+
+}
+
+footer {
+    margin: 2em;
+    padding: 2em;
+    height: 2em;
+    background-color: blueviolet;
+}
+
+.rules {
+    display: none;
+}

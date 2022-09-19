@@ -133,6 +133,9 @@ function resetGame () {
   document.getElementById("player-score").innerText = 0;
   document.getElementById("computer-score").innerText = 0;
   document.getElementById("draw-score").innerText = 0;
+  document.getElementById("player-choice").innerText = "";
+  document.getElementById("computer-choice").innerText = "";
+  document.getElementById("result").innerText = "";
 }
 
 // Hide/show rules 
