@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="description" content="Rock paper scissors">
     <meta name="keywords" content="game, rock, paper, scissors">
     <title>Rock Paper Scissors Lizard Spock</title>
@@ -15,15 +15,21 @@
         <div class="navbar">
             <nav>
                 <ul class="menu">
-                    <li><a href="rules.html">Rules</a></li>
+                    <button onclick="rules()">Rules</button>
                 </ul>
             </nav>
         </div>
+        <div class="rules" id="rules">
+            <h2>Rules</h2>
+            <p>Rules to the game</p>
+        </div>
     </header>
     <div class="choice-area">
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
-        <h2>Your Choice: <span id="player-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
+        <h2 class="yourchoice">Your Choice: <span id="player-choice"></span></h2>
+        <h2 class="compchoice">Computer Choice: <span id="computer-choice"></span></h2>
+    </div>
+    <div>
+        <h2 class="result">Result: <span id="result"></span></h2>
     </div>
     <div class="icon-area">
         <button class="button" id="rock">rock</button>
@@ -41,6 +47,6 @@
         <button id="reset-game" onclick="resetGame()">Reset game</button>
     </div>
     <footer>Add something here</footer>
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -134,3 +134,14 @@ function resetGame () {
   document.getElementById("computer-score").innerText = 0;
   document.getElementById("draw-score").innerText = 0;
 }
+
+// Hide/show rules 
+
+function rules() {
+  var x = document.getElementById("rules");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
