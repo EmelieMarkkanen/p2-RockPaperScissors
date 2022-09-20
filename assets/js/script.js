@@ -139,7 +139,7 @@ function resetGame () {
 }
 
 // Hide/show rules 
-
+/*
 function rules() {
   var x = document.getElementById("rules");
   if (x.style.display === "block") {
@@ -147,4 +147,4 @@ function rules() {
   } else {
     x.style.display = "block";
   }
-}
+} */
