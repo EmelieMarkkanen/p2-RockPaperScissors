@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Kanit:wght@300&family=Lato:wght@300&display=swap');
 
 * {
-margin: 0;
-padding: 0;
-border: none;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 body {
@@ -11,12 +11,12 @@ body {
     font-family: 'Kanit', sans-serif;
     color: gray;
     align-items: center;
-    text-align: center;  
+    text-align: center;
 }
 
 h1 {
     letter-spacing: 2px;
-    
+
 }
 
 h2 {
@@ -41,7 +41,7 @@ header {
 }
 
 button {
-    background-color: green; 
+    background-color: green;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -55,12 +55,9 @@ button:hover {
     color: blue;
 }
 
-div {
+div {}
 
-}
-.choice-area {
-
-}
+.choice-area {}
 
 .icon-area {
     margin: 3em;

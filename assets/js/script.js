@@ -17,14 +17,13 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   generateComputerChoice();
   getResult();
   updateScore();
-}
-));
+}));
 
 // Generate random computer choice
 
 function generateComputerChoice() {
   const computerPossibleChoices = [
-    "rock","paper","scissors","lizard","spock",
+    "rock", "paper", "scissors", "lizard", "spock",
   ];
   const randomNumber = Math.floor(Math.random() * possibleChoices.length);
   computerChoice = computerPossibleChoices[randomNumber];
@@ -57,9 +56,7 @@ function getResult() {
   if (computerChoice === playerChoice) {
     result = draw;
     drawScore();
-  }
-
-  else if (computerChoice === "rock") {
+  } else if (computerChoice === "rock") {
     if (playerChoice === "paper" || playerChoice === "spock") {
       result = win;
       playerScore();
@@ -67,9 +64,7 @@ function getResult() {
       result = lose;
       computerScore();
     }
-  }
-
-  else if (computerChoice === "paper") {
+  } else if (computerChoice === "paper") {
     if (playerChoice === "lizard" || playerChoice === "scissors") {
       result = win;
       playerScore();
@@ -77,9 +72,7 @@ function getResult() {
       result = lose;
       computerScore();
     }
-  }
-
-  else if (computerChoice === "scissors") {
+  } else if (computerChoice === "scissors") {
     if (playerChoice === "rock" || playerChoice === "spock") {
       result = win;
       playerScore();
@@ -87,9 +80,7 @@ function getResult() {
       result = lose;
       computerScore();
     }
-  }
-
-  else if (computerChoice === "lizard") {
+  } else if (computerChoice === "lizard") {
     if (playerChoice === "scissors" || playerChoice === "rock") {
       result = win;
       playerScore();
@@ -97,9 +88,7 @@ function getResult() {
       result = lose;
       computerScore();
     }
-  }
-
-  else if (computerChoice === "spock") {
+  } else if (computerChoice === "spock") {
     if (playerChoice === "lizard" || playerChoice === "paper") {
       result = win;
       playerScore();
@@ -118,10 +107,12 @@ function playerScore() {
   let yourScore = parseInt(document.getElementById("player-score").innerText);
   document.getElementById("player-score").innerText = ++yourScore;
 }
+
 function computerScore() {
   let yourScore = parseInt(document.getElementById("computer-score").innerText);
   document.getElementById("computer-score").innerText = ++yourScore;
 }
+
 function drawScore() {
   let yourScore = parseInt(document.getElementById("draw-score").innerText);
   document.getElementById("draw-score").innerText = ++yourScore;
@@ -129,7 +120,7 @@ function drawScore() {
 
 //Reset score count to start over
 
-function resetGame () {
+function resetGame() {
   document.getElementById("player-score").innerText = 0;
   document.getElementById("computer-score").innerText = 0;
   document.getElementById("draw-score").innerText = 0;
