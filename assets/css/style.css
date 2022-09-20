@@ -33,8 +33,13 @@ header {
     padding: 2em;
 }
 
-.navbar {
-    margin: 0;
+aside {
+    margin: 2em;
+    padding: 2em;
+    position: fixed;
+    background-color: blanchedalmond;
+    width: 25%;
+
 }
 .menu button {
     float: right;
@@ -63,7 +68,7 @@ div {
 
 }
 .choice-area {
-    
+
 }
 
 .icon-area {
