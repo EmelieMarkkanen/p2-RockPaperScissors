@@ -13,9 +13,9 @@
 
 <body>
     <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <h1><i class="fas fa-hand-spock"></i> Rock Paper Scissors Lizard Spock <i class="fas fa-hand-scissors"></i></h1>
     </header>
-    <div>
+    <div class="game-area">
         <div class="rules-box">
             <p class="rules" id="rules">Scissors cuts paper. Paper covers rock. <br>
                 Rock crushes lizard. Lizard poisons Spock. <br>
@@ -34,11 +34,11 @@
         <h2 class="result">Result: <span id="result"></span></h2>
     </div>
     <div class="icon-area">
-        <button class="button" id="rock">rock</button>
-        <button class="button" id="paper">paper</button>
-        <button class="button" id="scissors">scissors</button>
-        <button class="button" id="lizard">lizard</button>
-        <button class="button" id="spock">spock</button>
+        <button class="button"><i id="Rock" class="fas fa-hand-rock"></i></button>
+        <button class="button"><i id="Paper" class="fas fa-hand-paper"></i></button>
+        <button class="button"><i id="Scissors" class="fas fa-hand-scissors"></i></button>
+        <button class="button"><i id="Lizard" class="fas fa-hand-lizard"></i></button>
+        <button class="button"><i id="Spock" class="fas fa-hand-spock"></i></button>
     </div>
     <div class="scoring-area">
         <p>Player score: <span id="player-score">0</span></p>
@@ -51,7 +51,10 @@
     </div>
     </div>
     <footer>Add something here</footer>
+
     <script src="assets/js/script.js"></script>
+    <!--Font awesome script-->
+    <script src="https://kit.fontawesome.com/88aa68d53d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

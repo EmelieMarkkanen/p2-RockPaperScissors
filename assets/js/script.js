@@ -23,25 +23,25 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 function generateComputerChoice() {
   const computerPossibleChoices = [
-    "rock", "paper", "scissors", "lizard", "spock",
+    "Rock", "Paper", "Scissors", "Lizard", "Spock",
   ];
   const randomNumber = Math.floor(Math.random() * possibleChoices.length);
   computerChoice = computerPossibleChoices[randomNumber];
 
   if (randomNumber === 1) {
-    computerChoice = "rock";
+    computerChoice = "Rock";
   }
   if (randomNumber === 2) {
-    computerChoice = "paper";
+    computerChoice = "Paper";
   }
   if (randomNumber === 3) {
-    computerChoice = "scissors";
+    computerChoice = "Scissors";
   }
   if (randomNumber === 4) {
-    computerChoice = "lizard";
+    computerChoice = "Lizard";
   }
   if (randomNumber === 5) {
-    computerChoice = "spock";
+    computerChoice = "Spock";
   }
   computerChoiceDisplay.innerHTML = computerChoice;
 }
@@ -56,40 +56,40 @@ function getResult() {
   if (computerChoice === playerChoice) {
     result = draw;
     drawScore();
-  } else if (computerChoice === "rock") {
-    if (playerChoice === "paper" || playerChoice === "spock") {
+  } else if (computerChoice === "Rock") {
+    if (playerChoice === "Paper" || playerChoice === "Spock") {
       result = win;
       playerScore();
     } else {
       result = lose;
       computerScore();
     }
-  } else if (computerChoice === "paper") {
-    if (playerChoice === "lizard" || playerChoice === "scissors") {
+  } else if (computerChoice === "Paper") {
+    if (playerChoice === "Lizard" || playerChoice === "Scissors") {
       result = win;
       playerScore();
     } else {
       result = lose;
       computerScore();
     }
-  } else if (computerChoice === "scissors") {
-    if (playerChoice === "rock" || playerChoice === "spock") {
+  } else if (computerChoice === "Scissors") {
+    if (playerChoice === "Rock" || playerChoice === "Spock") {
       result = win;
       playerScore();
     } else {
       result = lose;
       computerScore();
     }
-  } else if (computerChoice === "lizard") {
-    if (playerChoice === "scissors" || playerChoice === "rock") {
+  } else if (computerChoice === "Lizard") {
+    if (playerChoice === "Scissors" || playerChoice === "Rock") {
       result = win;
       playerScore();
     } else {
       result = lose;
       computerScore();
     }
-  } else if (computerChoice === "spock") {
-    if (playerChoice === "lizard" || playerChoice === "paper") {
+  } else if (computerChoice === "Spock") {
+    if (playerChoice === "Lizard" || playerChoice === "Paper") {
       result = win;
       playerScore();
     } else {
