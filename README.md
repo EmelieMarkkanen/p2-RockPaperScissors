@@ -45,6 +45,12 @@ Winner gets a point!
 
 ## Screenshots of website
 
+### Landing page
+
+![Landing page](/workspace/p2-RockPaperScissors/docs/screenshots/RPS-screenshot1.jpg)
+
+Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
+
 ## User stories
 
 ## Typography and color scheme
