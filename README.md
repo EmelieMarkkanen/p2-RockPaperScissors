@@ -107,6 +107,16 @@ For this project I’ve used HTML5 and CSS.
 
 ### Github pages
 
+The website is deployed via Github pages. 
+
+1. Log in to Github
+2. Navigate to the correct repository, in this case EmelieMarkkanen/p1-stockholm-spa-hotel
+3. Locate and click Settings, at the top of the repository, and continue on to Pages in the leftside column
+4. Under the heading Source click the dropdown menues and choose Branch: Main and Root folder
+5. Click Save
+6. Refresh the page and a message will appear and tell you that the page is live
+7. Click the link to visit the live website
+
 ## Credits
 
 ### Content
