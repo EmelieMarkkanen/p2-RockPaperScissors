@@ -2,8 +2,6 @@ const computerChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const resultDisplay = document.getElementById("result");
 const possibleChoices = document.querySelectorAll(".button");
-const playerScoreDisplay = document.getElementById("player-score");
-const computerScoreDisplay = document.getElementById("computer-score");
 let playerChoice;
 let computerChoice;
 let result;
@@ -16,7 +14,6 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
   playerChoiceDisplay.innerHTML = playerChoice;
   generateComputerChoice();
   getResult();
-  updateScore();
 }));
 
 // Generate random computer choice

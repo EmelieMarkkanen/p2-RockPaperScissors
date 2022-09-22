@@ -140,6 +140,14 @@ For this project I’ve used HTML5 and CSS.
 
 ### Code testing
 
+Code validated trough W3C CSS and HTML validator, and JSHint code quality control
+
+CSS [result]()
+
+HTML [result]()
+
+JS [result]()
+
 ### Supported browsers and screen sizes 
 
 ### Known issues
