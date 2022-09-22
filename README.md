@@ -78,7 +78,7 @@ Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 
 I created the wireframe for this project using Balsamiq.
 <br>
-[View PDF of wireframe here](/workspace/p2-RockPaperScissorsLizardSpock/docs/screenshots/pdf/RPSLS.pdf)
+[View PDF of wireframe here](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/pdf/RPSLS.pdf)
 
 ## Technology
 
