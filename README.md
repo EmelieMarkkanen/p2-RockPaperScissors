@@ -54,13 +54,28 @@ Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 
 ## User stories
 
+- As a potential player I would like to easily understand the jest of the game based on the page design
+- As a potential player I would like to be able to read the rules of the game
+- When playing the game I would expect the game to function properly when interacting with the icons and buttons
+- When playing the game I would like the score counter to update accordingly to winner/draw 
+- As a potential player I would like to be able to reset the game score to start over
+
 ## Typography and color scheme
 
 ### Typography
 
+The font used for this website is called Kanit, imported from [Google fonts](https://fonts.google.com/). 
+
+I've used icons from [Font awesome](https://fontawesome.com/) for the choice buttons and heading decoration. 
+
 ### Color scheme
 
+The color scheme consists of three complementary colors, two hues of blue, #36538c and #5AA9FF, for background and fonts, and a hue of beige, #F1F1E6, for buttons and footer.
+The main background dark blue color matches the image used for the rules section. I've chosen a very stylized color scheme and font to let the game functions be the main focus of the site. 
+
 ### Imagery
+
+I've used an image from [Pin Clipart](https://www.pinclipart.com/) for the rules section, to visualize the rules.
 
 ## Features
 
@@ -73,6 +88,11 @@ Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 ### Game reset
 
 ### Future features
+
+In the future these functions could possibly be added
+- A sign in loading page to let the player add their name 
+- A high score function to let first to X points win the game
+- A two player function to let two users play on the same device
 
 ## Wireframes
 
@@ -96,6 +116,27 @@ For this project I’ve used HTML5 and CSS.
 ## Testing
 
 ### Player experience
+
+- As a potential player I would like to easily understand the jest of the game based on the page design
+    - The landing page consists of:
+        - a header with the name of the game
+        - icons corresponding to the name of the game
+        - two buttons, one to show the rules and one to reset the game
+
+- As a potential player I would like to be able to read the rules of the game
+    - There is a button with the name "Rules" that toggles show/hide a box with the rules of the game and an image for a visual explantion
+
+- When playing the game I would expect the game to function properly when interacting with the icons and buttons
+    - When clicking the icons the heading "You:" shows the players choice, and the heading "Computer:" shows the randomized computer choice
+    - When clicking the button "Rules" it toggles a show/hide a box with the rules of the game
+    - When clicking the button "Reset game" the score counter resets to 0
+
+- When playing the game I would like the score counter to update accordingly to winner/draw 
+    - The score counter updates after every comparison between the player and computer choice
+    - The heading "Result:" shows the result of the round; win, lose or draw
+
+- As a potential player I would like to be able to reset the game score to start over
+    - When clicking the button "Reset game" the score counter resets to 0
 
 ### Code testing
 
@@ -133,6 +174,7 @@ The website is deployed via Github pages.
 ### Acknowledgement
 
 ### External sources used
-[W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show)
-[Pin Clipart](https://www.pinclipart.com/)
-[MyColor](https://mycolor.space/)
+- [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show)
+- [Pin Clipart](https://www.pinclipart.com/)
+- [MyColor](https://mycolor.space/)
+- [Copy programming](https://copyprogramming.com/)
