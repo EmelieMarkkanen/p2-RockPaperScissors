@@ -24,13 +24,10 @@ h2 {
     letter-spacing: 2px;
 }
 
-.result {
-    margin-right: 15em;
-}
-
 header {
     padding: 2em;
 }
+/* Styling for buttons and icons */
 
 button {
     background-color: #36538c;
@@ -45,49 +42,6 @@ button {
 
 button:hover {
     color: #FFF7D6;
-}
-
-.choice-area {}
-
-.icon-area {
-    margin: 3em;
-}
-
-.scoring-area {
-    margin: 3em;
-    font-size: larger;
-}
-
-footer {
-    margin: 2em;
-    padding: 2em;
-    height: 2em;
-    background-color: blueviolet;
-}
-
-.rules {
-    display: none;
-    padding: 2em;
-    font-size: larger;
-    color: #36538c;
-    font-weight: bolder;
-}
-
-img {
-    height: auto;
-    width: 50%;
-}
-
-.rules-box {
-    background-color: #FFF7D6;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-    margin: 0 40em;
-    left: 0;
-    right: 0;
-    opacity: 0.8;
-    border-radius: 1em;
 }
 
 #rules-button {
@@ -120,4 +74,49 @@ img {
 
 #rules-button:hover {
     color: blue;
+}
+
+/* Styling for divs */
+
+.icon-area {
+    margin: 3em;
+}
+
+.scoring-area {
+    margin: 3em;
+    font-size: larger;
+}
+
+.rules {
+    display: none;
+    padding: 2em;
+    font-size: larger;
+    color: #36538c;
+    font-weight: bolder;
+}
+
+img {
+    height: auto;
+    width: 50%;
+}
+
+.rules-box {
+    background-color: #FFF7D6;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    margin: 0 40em;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    border-radius: 1em;
+}
+
+/* Styling for footer */
+
+footer {
+    margin: 2em;
+    padding: 2em;
+    height: 2em;
+    background-color: blueviolet;
 }
