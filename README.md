@@ -47,7 +47,7 @@ Winner gets a point!
 
 ### Landing page
 
-![Landing page](/workspace/p2-RockPaperScissors/docs/screenshots/RPS-screenshot1.jpg)
+![Landing page](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/RPS-screenshot1.jpg)
 
 Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 
