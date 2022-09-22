@@ -100,8 +100,8 @@ For this project I’ve used HTML5 and CSS.
 
 1. I created a repository in Github, named it p2-RockPaperScissorsLizardSpock, and used the template Code-Institute-Org/gitpod-full-template
 2. Once the repository is created, click the green button to the right (Gitpod) to open Gitpod
-3. In the terminal I've created the html files, index.html, eat.html, form.html etcetera
-4. I created the assets folder to hold the style.css file and images
+3. In the terminal I've created the html file, index.html
+4. I created the assets folder to hold the style.css file, script.js and images
 5. I created the docs folder to hold PDF:s and screenshots
 6. Once folders and files are created I used Git commands to add the changes in the files to the staging area and push the changes to my repository
 
