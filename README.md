@@ -9,7 +9,7 @@ Scissors cuts paper. Paper covers rock. Rock crushes lizard. Lizard poisons Spoc
 Winner gets a point!
 
 ## Live project website
-[View live website here]()
+[View live website here](https://emeliemarkkanen.github.io/p2-RockPaperScissorsLizardSpock/)
 
 ## ReadMe table of contents
 
@@ -25,6 +25,7 @@ Winner gets a point!
     - [Responsive](#responsive)
     - [Social](#social)
     - [Rules](#rules)
+    - [Game reset](#game-reset)
     - [Future features](#future-features)
 - [Wireframes](#wireframes)
 - [Technology](#technology)
@@ -68,6 +69,8 @@ Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 ### Social
 
 ### Rules
+
+### Game reset
 
 ### Future features
 
