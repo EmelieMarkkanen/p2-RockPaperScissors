@@ -195,7 +195,12 @@ The website is deployed via Github pages.
 
 ### Content
 
+All content is written and designed by the creator
+
 ### Acknowledgement
+
+- Carmilla Mina Ztorm for valuable input for solving issues with the JavaScript code
+- Code institute for excellent teaching
 
 ### External sources used
 - [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show)
