@@ -81,11 +81,19 @@ I've used an image from [Pin Clipart](https://www.pinclipart.com/) for the rules
 
 ### Responsive
 
+This website is repsonsive to multiple screen sizes.
+
 ### Social
+
+This website contain a link to the creators Github page. 
 
 ### Rules
 
+The website contains a button that toggles show/hide a div with the rules to the game. 
+
 ### Game reset
+
+The website contains a button that resets the game score. 
 
 ### Future features
 
@@ -103,7 +111,7 @@ I created the wireframe for this project using Balsamiq.
 ## Technology
 
 ### Languages used
-For this project I’ve used HTML5 and CSS. 
+For this project I’ve used HTML5, CSS and JavaScript
 
 - [HTML5](https://sv.wikipedia.org/wiki/HTML5)
 - [CSS](https://sv.wikipedia.org/wiki/Cascading_Style_Sheets)
@@ -142,15 +150,23 @@ For this project I’ve used HTML5 and CSS.
 
 Code validated trough W3C CSS and HTML validator, and JSHint code quality control
 
-CSS [result]()
+- CSS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/CSS-validation-screenshot.jpg)
 
-HTML [result]()
+- HTML [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/HTML-validation-screenshot.jpg)
 
-JS [result]()
+- JS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/JS-validation-screenshot.jpg)
+
+- The website passes through Lighthouse with a score of 98 or higher, except for "Accessability", which is 85. This is because the icon buttons "do not have an accessible name, when a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers." I have chosen to add a alt to the buttons as a solution to this. 
 
 ### Supported browsers and screen sizes 
 
+Testing is done primarily in Google Chrome,Firefox and Microsoft Edge, which all support this website.
+
+The website is responsive to multiple screen sizes. 
+
 ### Known issues
+
+- JSHint gives two warnings; two unused variables, resetGame() and Rules(). These functions are used as onclick events and I've therefor chosen to ignore this. 
 
 ## Deployment
 
