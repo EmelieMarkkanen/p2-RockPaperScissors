@@ -265,7 +265,7 @@ footer a {
     }
 
     .choice-area > h2 {
-        font-size: medium;
+        font-size: small;
     }
 
     .scoring-area {
@@ -281,6 +281,6 @@ footer a {
     }
 
     .result-area > h2 {
-        font-size: medium;
+        font-size: small;
     }
 }

@@ -9,9 +9,9 @@ let playerChoice;
 let computerChoice;
 let result;
 
-let win = "You win";
-let lose = "You lose";
-let draw = "It's a draw";
+let win = "You win!";
+let lose = "You lose!";
+let draw = "Draw!";
 
 //Event listener
 
@@ -56,49 +56,38 @@ function getResult() {
   if (computerChoice === playerChoice) {
     result = draw;
     drawScore();
-    incrementScore(result);
   } else if (computerChoice === "Rock") {
     if (playerChoice === "Paper" || playerChoice === "Spock") {
       result = win;
-      incrementScore(result);
     } else {
       result = lose;
-      incrementScore(result);
     }
   } else if (computerChoice === "Paper") {
     if (playerChoice === "Lizard" || playerChoice === "Scissors") {
       result = win;
-      incrementScore(result);
     } else {
       result = lose;
-      incrementScore(result);
     }
   } else if (computerChoice === "Scissors") {
     if (playerChoice === "Rock" || playerChoice === "Spock") {
       result = win;
-      incrementScore(result);
     } else {
       result = lose;
-      incrementScore(result);
     }
   } else if (computerChoice === "Lizard") {
     if (playerChoice === "Scissors" || playerChoice === "Rock") {
       result = win;
-      incrementScore(result);
     } else {
       result = lose;
-      incrementScore(result);
     }
   } else if (computerChoice === "Spock") {
     if (playerChoice === "Lizard" || playerChoice === "Paper") {
       result = win;
-      incrementScore(result);
     } else {
       result = lose;
-      incrementScore(result);
     }
   }
-    resultDisplay.innerHTML = result;
+    incrementScore();
 }
 
 //Generate and update score count for player, computer and draw
@@ -118,10 +107,10 @@ function drawScore() {
   document.getElementById("draw-score").innerText = ++yourScore;
 }
 
-function incrementScore(result) {
-  if (result = win) {
+function incrementScore() {
+  if (result === win) {
      playerScore()
-  } else if (result = lose) {
+  } else if (result === lose) {
      computerScore();
   } else {
      drawScore()

@@ -153,11 +153,11 @@ For this project I’ve used [HTML5](https://sv.wikipedia.org/wiki/HTML5), [CSS]
 
 Code validated trough W3C CSS and HTML validator, and JSHint code quality control
 
-- CSS [result]()
+- CSS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/CSS-validation-screenshot.jpg)
 
-- HTML [result]()
+- HTML [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/HTML-validation-screenshot.jpg)
 
-- JS [result]()
+- JS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/JS-validation-screenshot.jpg)
 
 - The website passes through Lighthouse with a score of 98 or higher, except for "Accessability", which is 85. This is because the icon buttons "do not have an accessible name, when a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers." I have chosen to add a alt to the buttons as a solution to this. 
 
