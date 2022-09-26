@@ -132,7 +132,7 @@ function incrementScore(result) {
 //Show reset game question
 
 function toggleResetGame() {
-  let reset = document.getElementById("X");
+  let reset = document.getElementById("reset-game-popup");
   if (reset.style.display === "block") {
     reset.style.display = "none";
   } else {
