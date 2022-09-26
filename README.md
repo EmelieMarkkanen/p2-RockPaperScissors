@@ -169,7 +169,7 @@ The website is responsive to multiple screen sizes.
 
 ### Known issues
 
-- JSHint gives two warnings; two unused variables, resetGame() and Rules(). These functions are used as onclick events and I've therefor chosen to ignore this. 
+- JSHint gives three warnings; three unused variables, toggleResetGame() and resetGame() and toggleRules(). These functions are used as onclick events and I've therefor chosen to ignore this. 
 
 ## Deployment
 
