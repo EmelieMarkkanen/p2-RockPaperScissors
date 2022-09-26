@@ -16,14 +16,23 @@
         <h1><i class="fas fa-hand-spock"></i> Rock Paper Scissors Lizard Spock <i class="fas fa-hand-scissors"></i></h1>
     </header>
     <div class="game-area">
-        <div class="rules-box">
-            <p class="rules" id="rules">Scissors cuts paper. Paper covers rock. <br>
+        <div class="popup-box">
+            <p class="rules" id="rules">
+                Scissors cuts paper. Paper covers rock. <br>
                 Rock crushes lizard. Lizard poisons Spock. <br>
                 Spock smashes scissors. Scissors decapitates lizard. <br>
                 Lizard eats paper. Paper disproves Spock. <br>
                 Spock vaporizes rock. Rock crushes scissors.<br>
                 <img src="assets/images/PinClipart.com_rock-paper-scissors-clipart_5745200.png" id="image" alt="Hands showing the rules of rock-paper-scissors-lizard-spock"><br>
-                Click the icon of the hand you wish to play!
+                Click the icon of the hand you wish to play! <br>
+                <button onclick="toggleRules()" class="closeButton">Close</button>
+            </p>
+        </div>
+        <div class="popup-box">
+            <p class="rules" id="X">
+                Do you wish to reset the game and start over? <br>
+                <button onclick="toggleResetGame() , resetGame()" class="choice-button">Yes</button>
+                <button onclick="toggleResetGame()" class="choice-button">No</button>
             </p>
         </div>
     </div>
@@ -47,8 +56,8 @@
         <p>Draw: <span id="draw-score">0</span></p>
     </div>
     <div>
-        <button id="rules-button" onclick="rules()">Rules</button>
-        <button id="reset-game" onclick="resetGame()">Reset game</button>
+        <button id="rules-button" onclick="toggleRules()">Rules</button>
+        <button id="reset-game-button" onclick="toggleResetGame()">Reset game</button>
     </div>
 
     <footer>
