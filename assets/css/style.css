@@ -267,4 +267,20 @@ footer a {
     .choice-area > h2 {
         font-size: medium;
     }
+
+    .scoring-area {
+        margin: 1em;
+    }
+
+    .choice-area {
+        margin: 1em;
+    }
+
+    .result-area {
+        margin: 1em;
+    }
+
+    .result-area > h2 {
+        font-size: medium;
+    }
 }
