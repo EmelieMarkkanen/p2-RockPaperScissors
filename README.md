@@ -89,11 +89,11 @@ This website contain a link to the creators Github page.
 
 ### Rules
 
-The website contains a button that toggles show/hide a div with the rules to the game. 
+The website contains a button that toggles a div with the rules to the game. 
 
 ### Game reset
 
-The website contains a button that resets the game score. 
+The website contains a button that opens a popup and asks wether the player wishes to reset the game. If the player clicks "Yes" the game resets and close this popup. 
 
 ### Future features
 
