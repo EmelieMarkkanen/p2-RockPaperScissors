@@ -111,15 +111,10 @@ I created the wireframe for this project using Balsamiq.
 ## Technology
 
 ### Languages used
-For this project I’ve used HTML5, CSS and JavaScript
-
-- [HTML5](https://sv.wikipedia.org/wiki/HTML5)
-- [CSS](https://sv.wikipedia.org/wiki/Cascading_Style_Sheets)
-- [JavaScript](https://sv.wikipedia.org/wiki/Javascript)
+For this project I’ve used [HTML5](https://sv.wikipedia.org/wiki/HTML5), [CSS](https://sv.wikipedia.org/wiki/Cascading_Style_Sheets) and [JavaScript](https://sv.wikipedia.org/wiki/Javascript)
 
 ### Other applications used
-- [Github](https://github.com/)
-- [Balsamiq](https://balsamiq.com/)
+[Github](https://github.com/) and [Balsamiq](https://balsamiq.com/)
 
 ## Testing
 
@@ -150,11 +145,11 @@ For this project I’ve used HTML5, CSS and JavaScript
 
 Code validated trough W3C CSS and HTML validator, and JSHint code quality control
 
-- CSS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/CSS-validation-screenshot.jpg)
+- CSS [result]()
 
-- HTML [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/HTML-validation-screenshot.jpg)
+- HTML [result]()
 
-- JS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/JS-validation-screenshot.jpg)
+- JS [result]()
 
 - The website passes through Lighthouse with a score of 98 or higher, except for "Accessability", which is 85. This is because the icon buttons "do not have an accessible name, when a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers." I have chosen to add a alt to the buttons as a solution to this. 
 
@@ -199,6 +194,7 @@ All content is written and designed by the creator
 
 ### Acknowledgement
 
+- My mentor Rohit for valuable input and teaching
 - Carmilla Mina Ztorm for valuable input for solving issues with the JavaScript code
 - Code institute for excellent teaching
 
