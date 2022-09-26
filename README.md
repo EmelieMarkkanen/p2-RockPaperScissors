@@ -50,6 +50,14 @@ Winner gets a point!
 
 ![Landing page](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/RPS-screenshot1.jpg)
 
+### Game rules
+
+![Game rules](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/RPS-screenshot2.jpg)
+
+### Reset game
+
+![Reset game](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/RPS-screenshot3.jpg)
+
 Screenshots created using [Am I Responsive](https://ui.dev/amiresponsive)
 
 ## User stories
