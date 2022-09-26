@@ -205,11 +205,12 @@ footer a {
         font-size: 80%;
     }
     .icon-area {
-        margin: 0;
+        margin: ;
     }
 
     .button {
         margin: 0;
+        font-size: 300%;
     }
 
     footer {
@@ -222,7 +223,7 @@ footer a {
 @media only screen and (max-width: 670px) {
 
     .button {
-        font-size: 350%;
+        font-size: 300%;
     }
 
     footer {
@@ -239,7 +240,7 @@ footer a {
 @media only screen and (max-width: 595px) {
 
     .button {
-        font-size: 300%;
+        font-size: 250%;
     }
 }
 
@@ -252,6 +253,7 @@ footer a {
     }
     .button {
         letter-spacing: 1rem;
+        font-size: 200%;
     }
 
     footer {
