@@ -170,6 +170,10 @@ footer {
     color: #36538c;
     font-weight: bold;
     border-radius: 1em;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    display: inline-block;
 }
 
 footer a {
@@ -214,7 +218,7 @@ footer a {
     }
 
     footer {
-        width: auto;
+        width: 60%;
     }
 }
 
@@ -227,7 +231,7 @@ footer a {
     }
 
     footer {
-        width: auto;
+        width: ;
     }
 
     .rules-box {
