@@ -6,7 +6,7 @@ This is a rock-paper-scissors-lizard-spock game that allows the user to play aga
 
 Scissors cuts paper. Paper covers rock. Rock crushes lizard. Lizard poisons Spock. Spock smashes scissors. Scissors decapitates lizard. Lizard eats paper. Paper disproves Spock. Spock vaporizes rock. Rock crushes scissors.
 
-Winner gets a point!
+Winner gets a point! 
 
 ## Live project website
 [View live website here](https://emeliemarkkanen.github.io/p2-RockPaperScissorsLizardSpock/)
@@ -147,7 +147,7 @@ For this project I’ve used [HTML5](https://sv.wikipedia.org/wiki/HTML5), [CSS]
     - The heading "Result:" shows the result of the round; win, lose or draw
 
 - As a potential player I would like to be able to reset the game score to start over
-    - When clicking the button "Reset game" the score counter resets to 0
+    - When clicking the button "Reset game" it toggles a popup with a question whether the player wish to reset the game, if they click "Yes" the score counter resets to 0 and close the popup.
 
 ### Code testing
 
@@ -159,7 +159,7 @@ Code validated trough W3C CSS and HTML validator, and JSHint code quality contro
 
 - JS [result](https://github.com/EmelieMarkkanen/p2-RockPaperScissorsLizardSpock/blob/main/docs/screenshots/JS-validation-screenshot.jpg)
 
-- The website passes through Lighthouse with a score of 98 or higher, except for "Accessability", which is 85. This is because the icon buttons "do not have an accessible name, when a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers." I have chosen to add a title element to the buttons as a solution to this. 
+- The website passes through Lighthouse with a score of 97 or higher. 
 
 ### Supported browsers and screen sizes 
 

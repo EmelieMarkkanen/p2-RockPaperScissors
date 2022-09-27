@@ -25,7 +25,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 // Generate random computer choice
 
 function generateComputerChoice() {
-  const computerPossibleChoices = [
+  let computerPossibleChoices = [
     "Rock", "Paper", "Scissors", "Lizard", "Spock",
   ];
   const randomNumber = Math.floor(Math.random() * possibleChoices.length);
