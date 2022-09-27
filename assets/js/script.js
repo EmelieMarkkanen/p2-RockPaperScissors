@@ -55,7 +55,6 @@ function getResult() {
 
   if (computerChoice === playerChoice) {
     result = draw;
-    drawScore();
   } else if (computerChoice === "Rock") {
     if (playerChoice === "Paper" || playerChoice === "Spock") {
       result = win;
